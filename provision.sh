@@ -84,9 +84,9 @@ mkdir -p /var/lib/razor/repo-store
 
 cd   
 
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+git clone https://github.com/sstephenson/rbenv.git /root/.rbenv
+echo 'export PATH=/root/.rbenv/bin:$PATH' >> /root/.bashrc
+echo 'eval "$(rbenv init -)"' >> /root/.bashrc
 
 source /root/.bashrc
 cd /opt
